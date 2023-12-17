@@ -1,0 +1,29 @@
+.info {
+  padding: 36px 0;
+  :global(.container) {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  h1,h2,h3 {
+    margin-bottom: 16px;
+  }
+  p {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-type: disc;
+    padding-left: 24px;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    li {
+      list-style-type: disc;
+    }
+  }
+}

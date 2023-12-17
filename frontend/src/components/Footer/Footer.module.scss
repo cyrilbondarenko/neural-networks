@@ -1,0 +1,55 @@
+.footer {
+  background: #1A1A1A;
+  padding: 24px 0;
+  color: #ffffff;
+  :global(.container) {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    @media (max-width: 575px) {
+      gap: 36px;
+    }
+  }
+  &__logo {
+    text-decoration: none;
+    span {
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 300;
+    }
+    strong {
+      font-weight: 700;
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 575px) {
+      gap: 36px;
+      flex-direction: column;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    > span {
+      margin-bottom: 12px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    ul {
+      display: flex;
+      gap: 12px;
+      list-style: none;
+      li a {
+        color: #ffffff;
+      }
+    }
+  }
+}

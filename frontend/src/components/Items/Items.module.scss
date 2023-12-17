@@ -1,0 +1,27 @@
+.items {
+  padding: 36px 0;
+  border-top: 1px solid #1A1A1A;
+  &:not(:last-child) {
+    :global(.container) {
+      border-bottom: 1px solid #1A1A1A;
+    }
+  }
+  &__info {
+    margin-bottom: 24px;
+    h2 {
+      margin-bottom: 8px;
+    }
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 48px;
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 575px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

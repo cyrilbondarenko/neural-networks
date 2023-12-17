@@ -1,0 +1,97 @@
+@import "normalize.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    background: none;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}
+
+#__next {
+    display: flex;
+    flex-direction: column;
+    background: #E9E8E9;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 44px;
+    @media (max-width: 768px) {
+        font-size: 36px;
+    }
+}
+
+h2 {
+    font-size: 32px;
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+}
+
+h3 {
+    font-size: 24px;
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+h4, h5, h6 {
+    font-size: 20px;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+p {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+p * {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    color: #3a84f2;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    @media (max-width: 1280px) {
+        padding: 0 24px;
+    }
+}
+
+header, section, footer {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    flex: 1;
+}
